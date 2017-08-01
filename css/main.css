@@ -1,0 +1,143 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../assets/yo.png");
+    min-height: 100vh;
+    opacity: 9;
+}
+
+.bgimg-2 {
+    background-image: url("../assets/yoyperros.jpeg");
+    background-position: top;
+    min-height: 60vh;
+}
+
+.bgimg-3 {
+    background-image: url("../assets/yo2.png");
+    min-height: 50vh;
+}
+
+.bgimg-4 {
+    background-image: url("../assets/lucero.jpg");
+    min-height: 50vh;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.bgimg-3>.caption {
+    background-position: top center;
+    top: 30%;
+}
+
+.caption span.border {
+    font-family: 'Courgette', cursive;
+    color: #F21368;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #b30d57;
+}
+
+#ACERCA-DE-MI {
+    background-color: #F49393;
+    color: #111;
+}
+
+.separador {
+    color: #F21368;
+}
+
+hr {
+    border-width: medium;
+    border: solid #000;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 3rem "Cormorant Garamond", sans-serif;
+    color: #111;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.affix {
+    z-index: 8;
+    top: 93%;
+    width: 100%;
+}
+
+.affix+.container-fluid {
+    padding-top: 70px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 40%;
+    height: 2vh;
+    overflow: hidden;
+    border: 1px inset #111;
+    background-color: #111;
+    border-radius: 20px;
+}
+
+.progress1 {
+    color: #000;
+}
+
+progress::-webkit-progress-value {
+    background: #F21368;
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #111;
+    box-shadow: 0 2px 5px rgba(246, 12, 12, 0.25) inset;
+    border-radius: 20px;
+}
+
+.navbar-inverse {
+    background-color: #000;
+    border-color: #000;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #F21368;
+}
+
+.thumbnail .caption {
+    position: sticky;
+}
